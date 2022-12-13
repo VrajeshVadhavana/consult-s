@@ -1,5 +1,7 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+       
         <style>
             *{
                 box-sizing: border-box;
@@ -71,6 +73,21 @@
             }
             .a{
                 width: 4%;
+            }
+            @media screen and (max-width:1100px){
+                form{
+                    width:60%
+                }                
+            }
+            @media screen and (max-width:710px){
+                form{
+                    width: 80%;
+                }                
+            }
+            @media screen and (max-width:450px){
+                form section label,input{
+                    font-size: 5vw;
+                }                
             }
         </style>
     </head>
