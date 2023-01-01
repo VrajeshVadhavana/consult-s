@@ -41,7 +41,7 @@ app.post("/get_treat",function(req,res){
     dis=dis.split(",");
     var obj = fs.readFileSync(__dirname+"/medicine.json","utf-8");
     obj = JSON.parse(obj);
-    if(dis.some(function(val){return val=="headache"||val=="bodyache"||val=="sneezing"||val=="nose";})==true){
+    if(dis.some(function(val){return val=="headache"||val=="bodyache"|| val== "fever"||val=="sneezing"||val=="nose";})==true){
         res.render("treatment",{
             name:name,
             age:age,
